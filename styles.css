@@ -155,6 +155,38 @@ div.hero-background-pos {
     border-radius: 50%;
     box-shadow: 2px 2px 15px 0 rgb(135 135 135 / 40%);
 }
+@media screen and(max-width:768px) {
+    div.hero-background {
+        padding: 5em;
+    }
+    
+    div.background {
+        padding: 3em;
+        width: auto;
+        height: auto;
+    }
+    
+    div.background h4 {
+        padding: 1em;
+    }
+    
+    div.background p {
+        padding-left: 1em;
+    }
+    
+    div.hero-background-pos {
+        display: none;
+    }
+}
+@media screen and(max-width:425px) {
+    div.background h4+p {
+        text-align: center;
+    }
+    
+    div.background p {
+        padding-left: 0;
+    }
+}
 div.snapshot-team {
     background: #f0f0f0;
     text-align: center;
@@ -182,6 +214,17 @@ div.snapshot-box {
 div.snapshot-box-content {
     display: flex;
     justify-content: space-between;
+}
+@media screen and(max-width:768px) {
+    div.snapshot-team {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    div.snapshop-team h2+p {
+        width: 80%;
+        align-self: center;
+    }
 }
 div.box1 {
     background: #fff;
@@ -222,7 +265,11 @@ div.box1 h5 {
     color: #E44C65;
     font-size: 1rem;
 }
-@media screen and (min-width: 600px) {}
+@media screen and (max-width: 425px) {
+    div.snapshot-box-content {
+        flex-direction: column;
+    }
+}
 div.gallery-section {
     background: #fff;
     padding: 4rem;
@@ -254,6 +301,31 @@ div.img {
 div.img img {
     width: 250px;
     height: 180px;
+}
+@media screen and(max-width:768px) {
+    div.gallery-content {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    div.gallery-content h4+p {
+        width: 80%;
+        align-self: center;
+        justify-content: center;
+    }
+}
+@media screen and(max-width:425px) {
+    div.gallery-section {
+        padding: 2em;
+    }
+    
+    div.gallery-content h4 {
+        font-size: 1.2rem;
+    }
+    
+    div.gallery-content p {
+        font-size: .8rem;
+    }
 }
 div.footer {
     background: #304353;
@@ -340,4 +412,19 @@ div.footer h6 {
     color: #88949B;
     font-size: 1rem;
     padding-top: 6rem;
+}
+@media screen and(max-width:768px) {
+    div.footer-input {
+        flex-direction: column;
+    }
+    
+    input [type="text"],
+    input[type="email"] {
+        width: 70%;
+        margin: .5rem auto;
+    }
+    
+    textarea {
+        width: 70%;
+    }
 }
